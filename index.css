@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.submit-btn {
+    background-color: aqua;
+    color: #fff;
+    padding: 2%;
+    font-size: 22px;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+}
+input {
+    padding: 2%;
+}
+label {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+    label {
+        color: green;
+    }
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    label {
+        color: red;
+    }
+}
